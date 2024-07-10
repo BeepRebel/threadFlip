@@ -1,0 +1,17 @@
+.button {
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: magenta;
+  color: beige;
+  border-radius: 25px;
+  padding: 13px 33px;
+  font-size: 14px;
+  text-decoration: none;
+  border: none; 
+  cursor: pointer; 
+}
+
+.button:hover {
+  background-color: darkmagenta; 
+}

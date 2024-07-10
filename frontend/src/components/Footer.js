@@ -1,11 +1,17 @@
-import React from 'react'
+import React from 'react';
+import './Footer.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+
 
 const Footer = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <footer className="footer">
+      <div className="footer-content">
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+      </div>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;
