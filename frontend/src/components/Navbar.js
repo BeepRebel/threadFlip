@@ -17,7 +17,7 @@ const Navbar = () => {
         <li><Link to="/product">Thrift</Link></li>
         <li><Link to="/login">Login</Link></li>
         <li><Link to="/contact">Contact</Link></li>
-        <li><Link to="#wishlist"><FontAwesomeIcon icon={faHeart} /></Link></li>
+        <li><Link to="/wishlist"><FontAwesomeIcon icon={faHeart} /></Link></li>
         <li><Link to="#cart"><FontAwesomeIcon icon={faShoppingCart} /></Link></li>
       </ul>
     </nav>
