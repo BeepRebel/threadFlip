@@ -12,7 +12,7 @@ const ProductCardThrift = ({id , brand, title, price, image, rating }) => {
         <div className='wishlist-icon position-absolute'>
         <Link to="#wishlist" className='wishlist-icon'><FontAwesomeIcon icon={faHeart} /></Link>
         </div>
-        <Link to="id">
+        <Link to="{`${id}`}">
           <img src={image} className='card-img-top' alt="product-image" />
         </Link>
         <div className='card-body'>
