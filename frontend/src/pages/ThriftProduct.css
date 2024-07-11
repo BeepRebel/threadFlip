@@ -1,0 +1,57 @@
+/* ThriftProduct.css */
+
+.main-product-wrapper {
+    background-color: #f8f9fa; /* Example background color */
+    padding: 20px 0;
+  }
+  
+  .main-product-wrapper .container-xxl {
+    /* Customize container styles if needed */
+  }
+  
+  .main-product-wrapper .main-product-image {
+    /* Styles for the main product image section */
+  }
+  
+  .product-details {
+    /* Styles for the product details section */
+  }
+  
+  .quantity-selector {
+    margin-bottom: 15px;
+  }
+  
+  .quantity-selector label {
+    margin-right: 10px;
+  }
+  
+  .btn-primary {
+    background-color: pink; /* Example primary button color */
+    color: #fff; /* Example button text color */
+  }
+  
+  .review-wrapper {
+    /* Styles for the review section */
+  }
+  
+  .review-head {
+    /* Styles for the review heading */
+  }
+  
+  .description-wrapper {
+    /* Styles for the description section */
+  }
+  
+  .description-wrapper h4 {
+    margin-bottom: 10px;
+  }
+  
+  .description-wrapper .bg-white {
+    /* Example background color for description box */
+    border: 1px solid #ccc; /* Example border */
+    border-radius: 5px; /* Example border radius */
+    padding: 15px;
+  }
+  
+  /* Additional styling for other sections as needed */
+  
