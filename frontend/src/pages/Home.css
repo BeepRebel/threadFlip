@@ -1,7 +1,7 @@
 .button {
   bottom: 10%;
   left: 50%;
-  transform: translateX(-50%);
+  
   background-color: magenta;
   color: beige;
   border-radius: 25px;
@@ -10,8 +10,135 @@
   text-decoration: none;
   border: none; 
   cursor: pointer; 
+  
+  
+}
+
+.main-banner{
+  margin-top: -1000px;
 }
 
 .button:hover {
   background-color: darkmagenta; 
+}
+
+.banner{
+  height: 770px;
+  margin: 0px;
+  margin-left: -150px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.img-fluid {
+  margin-top: 1000px;
+}
+
+.comm {
+  margin-left: -125px;
+  margin-top: 0px;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(178, 144, 230);
+  width: 120%;
+  padding: 10px;
+  height: 300px;
+}
+
+.comm p {
+  margin: 50px;
+  font-size: 75px;
+  color: azure;
+  font-family: "";
+}
+
+.log-sign {
+  background-color:darkmagenta;
+  color: rgb(247, 241, 241);
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-right: 150px;
+  font-size: x-large;
+  margin-top: 5px;
+}
+
+.log-sign:hover {
+  background-color: rgb(144, 210, 230);
+  color: darkmagenta;
+}
+
+.trend {
+  margin-left: -125px;
+  margin-top: 0px;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(230, 144, 161);
+  width: 120%;
+  padding: 10px;
+  height: 300px;
+}
+.trend p {
+  margin: 50px;
+  font-size: 75px;
+  color: azure;
+  font-family: "";
+}
+
+.rent {
+  background-color:darkmagenta;
+  color: rgb(247, 241, 241);
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-right: 150px;
+  font-size: x-large;
+  margin-top: 5px;
+  margin-left: 50px;
+}
+
+.rent:hover {
+  background-color: rgb(144, 210, 230);
+  color: darkmagenta;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-out;
+}
+
+@keyframes slideInFromBottom {
+  from {
+      transform: translateY(100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+.slide-in-bottom {
+  opacity: 0; /* Make sure the element is initially hidden */
+  transition: opacity 1s ease-out;
+}
+
+.slide-in-bottom.visible {
+  animation: slideInFromBottom 1s ease-out forwards;
+  opacity: 1; /* Ensure the element becomes visible */
 }
