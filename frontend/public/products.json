@@ -1,6 +1,6 @@
 [
   {
-    "id": "id",
+    "id": 1,
     "brand": "Zara",
     "title": "BootCut Jeans",
     "price": 3000,
@@ -42,4 +42,3 @@
     ]
   }
 ]
-
