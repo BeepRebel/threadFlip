@@ -1,11 +1,24 @@
 [
   {
-    "id": 1,
+    "id": "id",
     "brand": "Zara",
     "title": "BootCut Jeans",
     "price": 3000,
     "image": "/images/home/home-banner-1.png",
-    "rating": 3
+    "rating": 3,
+    "details": "An eco-friendly electric scooter with a range of 50 miles on a single charge.",
+    "name": "Electric Scooter",
+    "description": "Our electric scooter is designed for urban commuting, offering a smooth ride with zero emissions.",
+    "reviews": [
+      {
+        "customer": "John Doe",
+        "review": "Great scooter! Very convenient and environmentally friendly."
+      },
+      {
+        "customer": "Jane Smith",
+        "review": "Love the design and the range. Perfect for my daily commute."
+      }
+    ]
   },
   {
     "id": 2,
@@ -13,6 +26,20 @@
     "title": "Running Shoes",
     "price": 5000,
     "image": "/images/home/home-banner-1.png",
-    "rating": 4
+    "rating": 4,
+    "details": "An eco-friendly electric scooter with a range of 50 miles on a single charge.",
+    "name": "Electric Scooter",
+    "description": "Our electric scooter is designed for urban commuting, offering a smooth ride with zero emissions.",
+    "reviews": [
+      {
+        "customer": "John Doe",
+        "review": "Great scooter! Very convenient and environmentally friendly."
+      },
+      {
+        "customer": "Jane Smith",
+        "review": "Love the design and the range. Perfect for my daily commute."
+      }
+    ]
   }
 ]
+

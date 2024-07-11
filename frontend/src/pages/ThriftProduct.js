@@ -15,7 +15,7 @@ const ThriftProduct = () => {
           <div className='row'>
             <div className='col-6'>
               <div className='main-product-image'>
-                <img src={mainImage} alt="Product Banner" className="img-fluid" />
+                <img src={mainImage} alt="Product Banner" className="product-img" />
               </div>
               <div className="thumbnail-images d-flex mt-3">
                 <img
