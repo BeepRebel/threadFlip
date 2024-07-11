@@ -1,5 +1,6 @@
 import React from 'react'
 import CarouselComponent from './CarouselComponent';
+import ButtonsComponent from './ButtonsComponent';
 
 const Rent = () => {
   return (
@@ -9,6 +10,11 @@ const Rent = () => {
             <div className='row'>
             <div className='col-12'>
               <CarouselComponent />
+            </div>
+            <div className='row'>
+            <div className='col-12'>
+              <ButtonsComponent />
+            </div>
             </div>
                 
             </div>
