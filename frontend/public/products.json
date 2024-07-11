@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "brand": "Zara",
+    "title": "BootCut Jeans",
+    "price": 3000,
+    "image": "/images/home/home-banner-1.png",
+    "rating": 3
+  },
+  {
+    "id": 2,
+    "brand": "Nike",
+    "title": "Running Shoes",
+    "price": 5000,
+    "image": "/images/home/home-banner-1.png",
+    "rating": 4
+  }
+]

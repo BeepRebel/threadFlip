@@ -4,11 +4,11 @@ import { BrowserRouter, Routes , Route } from 'react-router-dom';
 import Layout from './components/Layout.js';
 import Home from './pages/Home';
 import Thrift from './pages/Thrift';
-import Rent from './pages/Rent'; 
+import ThriftProduct from './pages/ThriftProduct.js';
+import Rent from './pages/Rent.js';
 import About from './pages/About'
 import Contact from './pages/Contact';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 
 
 
@@ -22,7 +22,8 @@ function App() {
           <Route index element={<Home />}/>
           <Route path="about" element={<About />}/>
           <Route path="contact" element={<Contact />}/>
-          <Route path="thrift" element={<Thrift />}/>
+          <Route path="product" element={<Thrift />}/>
+          <Route path="product/:id" element={<ThriftProduct />} />
           <Route path="Rent" element={<Rent />}/>
         </Route>
       </Routes>

@@ -2,18 +2,19 @@ import React from 'react';
 import ReactStars from "react-rating-stars-component";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
-import { faShoppingCart, faEye, faHeart } from '@fortawesome/free-solid-svg-icons';
-
+import {faHeart } from '@fortawesome/free-solid-svg-icons';
 import './ProductCardThrift.css';
 
-const ProductCardThrift = ({ brand, title, price, image, rating }) => {
+const ProductCardThrift = ({id , brand, title, price, image, rating }) => {
   return (
     <div className='col-md-3'>
       <div className='card product-card position-relative'>
         <div className='wishlist-icon position-absolute'>
         <Link to="#wishlist" className='wishlist-icon'><FontAwesomeIcon icon={faHeart} /></Link>
         </div>
-        <img src={image} className='card-img-top' alt="product-image" />
+        <Link to="id">
+          <img src={image} className='card-img-top' alt="product-image" />
+        </Link>
         <div className='card-body'>
           <h6 className='card-subtitle mb-2 text-muted'>{brand}</h6>
           <h5 className='card-title'>{title}</h5>
