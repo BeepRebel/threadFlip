@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './ThriftProduct.css';
 
 const ThriftProduct = () => {
+  const [mainImage, setMainImage] = useState('/images/home/home-banner-1.png');
+
+  const handleThumbnailClick = (image) => {
+    setMainImage(image);
+  };
+
   return (
     <>
       <div className='main-product-wrapper py-5 home-wrapper-2'>
@@ -9,7 +15,27 @@ const ThriftProduct = () => {
           <div className='row'>
             <div className='col-6'>
               <div className='main-product-image'>
-              <img src="/images/home/home-banner-1.png" alt="Product Banner" />
+                <img src={mainImage} alt="Product Banner" className="img-fluid" />
+              </div>
+              <div className="thumbnail-images d-flex mt-3">
+                <img
+                  src="/images/home/home-banner-1.png"
+                  alt="Thumbnail 1"
+                  className="img-thumbnail"
+                  onClick={() => handleThumbnailClick('/images/home/home-banner-1.png')}
+                />
+                <img
+                  src="/images/home/home-banner-2.png"
+                  alt="Thumbnail 2"
+                  className="img-thumbnail"
+                  onClick={() => handleThumbnailClick('/images/home/home-banner-2.png')}
+                />
+                <img
+                  src="/images/home/home-banner-3.png"
+                  alt="Thumbnail 3"
+                  className="img-thumbnail"
+                  onClick={() => handleThumbnailClick('/images/home/home-banner-3.png')}
+                />
               </div>
             </div>
             <div className='col-6'>

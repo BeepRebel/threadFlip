@@ -15,7 +15,7 @@ const Navbar = () => {
         <li><Link to="#about">About</Link></li>
         <li><Link to="/Rent">Rent</Link></li>
         <li><Link to="/product">Thrift</Link></li>
-        <li><Link to="#wishlist"><FontAwesomeIcon icon={faHeart} /></Link></li>
+        <li><Link to="/Wishlist"><FontAwesomeIcon icon={faHeart} /></Link></li>
         <li><Link to="#cart"><FontAwesomeIcon icon={faShoppingCart} /></Link></li>
       </ul>
     </nav>
