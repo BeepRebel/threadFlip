@@ -14,7 +14,7 @@ const Navbar = () => {
         <li><Link to="#home">Home</Link></li>
         <li><Link to="#about">About</Link></li>
         <li><Link to="#rent">Rent</Link></li>
-        <li><Link to="/thrift">Thrift</Link></li>
+        <li><Link to="/product">Thrift</Link></li>
         <li><Link to="#wishlist"><FontAwesomeIcon icon={faHeart} /></Link></li>
         <li><Link to="#cart"><FontAwesomeIcon icon={faShoppingCart} /></Link></li>
       </ul>

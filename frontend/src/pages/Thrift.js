@@ -1,19 +1,42 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
+import ProductCardThrift from '../components/ProductCardThrift';
 
 const Thrift = () => {
-  return (
-    <>
-    <div className='store-wrapper home-wrapper-2 py-5'>
-        <div className='container-xxl'>
-            <div className='row'>
-                <div className='col-3'>
-                    <div className='filter-card mb-3'></div>
-                </div>
-            </div>
-        </div>      
-    </div>
-    </>
-  )
-}
+  const [products, setProducts] = useState([]);
 
-export default Thrift
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const response = await fetch('/products.json'); // Adjust the path as per your setup
+        if (!response.ok) {
+          throw new Error('Failed to fetch products');
+        }
+        const data = await response.json();
+        setProducts(data);
+      } catch (error) {
+        console.error('Error fetching products:', error);
+      }
+    };
+
+    fetchProducts();
+  }, []);
+
+  return (
+    <div className='container'>
+      <div className='row'>
+        {products.map(product => (
+          <ProductCardThrift
+            key={product.id}
+            brand={product.brand}
+            title={product.title}
+            price={product.price}
+            image={product.image}
+            rating={product.rating}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Thrift;
