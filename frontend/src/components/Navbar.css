@@ -4,7 +4,7 @@ body {
   }
   
   .navbar {
-    position: sticky;
+    position: fixed!important;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -12,16 +12,19 @@ body {
     padding: 10px 20px;
     border-bottom: 1px solid #dbafaf;
     z-index: 1000;
+    width: 100%;
   }
   
   .logo img {
-    height: 50px;
+    height: 70px;
+    margin-left:30px ;
   }
   
   .nav-links {
     list-style: none;
     display: flex;
     margin: 0;
+    margin-right: 20px;
     padding: 0;
   }
   
@@ -30,7 +33,7 @@ body {
   }
   
   .nav-links a {
-    color: #dbafaf;
+    color: #b37b7b;
     text-decoration: none;
     padding: 10px 15px;
     display: flex;
