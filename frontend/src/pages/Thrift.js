@@ -22,6 +22,7 @@ const Thrift = () => {
   }, []);
 
   return (
+    <section className="one">
     <div className='container'>
       <div className='row'>
         {products.map(product => (
@@ -36,6 +37,7 @@ const Thrift = () => {
         ))}
       </div>
     </div>
+    </section>
   );
 };
 

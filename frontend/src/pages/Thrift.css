@@ -1,7 +1,13 @@
+.one{
+    margin: 1000px!important;
+}
+
+
 .filter-card{
     background-color: beige;
     border-radius: 10px;
     padding: 10px 15px;
+    
 }
 
 .filter-title{

@@ -10,6 +10,7 @@ import About from './pages/About'
 import Contact from './pages/Contact';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Wishlist from './pages/Wishlist.js';
+import Cart from './pages/Cart.js';
 
 
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="product/:id" element={<ThriftProduct />} />
           <Route path="Rent" element={<Rent />}/>
           <Route path="Wishlist" element={<Wishlist />}/>
+          <Route path="Cart" element={<Cart />}/>
         </Route>
       </Routes>
       </BrowserRouter>

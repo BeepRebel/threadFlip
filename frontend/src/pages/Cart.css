@@ -1,0 +1,143 @@
+.cart-wrapper {
+    padding: 2rem 0;
+  }
+  
+  .cart {
+    margin-left: 0px;
+    margin-top: 50px;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(226, 144, 230);
+    width: 100%;
+    padding: 10px;
+    height: 150px;
+  }
+  
+  .cart p {
+    margin: 50px;
+    font-size: 50px;
+    color: azure;
+    font-family: "";
+  }
+  
+  .margin {
+    margin-top: 75px;
+  }
+  
+  .cart-items {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1rem;
+  }
+  
+  .cart-item {
+    border-bottom: 1px solid #eee;
+    padding: 1rem 0;
+  }
+  
+  .cart-item:last-child {
+    border-bottom: none;
+  }
+  
+  .cart-item-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-left: 1rem;
+  }
+  
+  .cart-item-details {
+    flex-grow: 1;
+    margin-left: 1rem;
+  }
+  
+  .cart-item-quantity {
+    display: flex;
+    align-items: center;
+    margin-right: 3rem;
+  }
+  
+  .quantity-button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.5rem;
+    cursor: pointer;
+    margin-right: 1rem;
+  }
+  
+  .quantity-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .cart-item-total {
+    font-weight: bold;
+    margin-right: 2rem;
+  }
+  
+  .cart-summary {
+    text-align: right;
+    margin-top: 2rem;
+  }
+  
+  .checkout-button {
+    background-color: magenta;
+    color: beige;
+    border-radius: 25px;
+    padding: 13px 33px;
+    font-size: 14px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .checkout-button:hover {
+    background-color: darkmagenta;
+  }
+  
+  .empty-cart-image {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  
+  .cart-button {
+    background-color: magenta;
+    color: beige;
+    border-radius: 25px;
+    padding: 13px 33px;
+    font-size: 14px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  .cart-button:hover {
+    background-color: darkmagenta;
+  }
+  
+  @keyframes slideInFromBottom {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .slide-in-bottom {
+    opacity: 0; /* Make sure the element is initially hidden */
+    transition: opacity 1s ease-out;
+  }
+  
+  .slide-in-bottom.visible {
+    animation: slideInFromBottom 1s ease-out forwards;
+    opacity: 1; /* Ensure the element becomes visible */
+  }
+  
