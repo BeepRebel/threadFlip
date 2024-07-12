@@ -11,7 +11,7 @@ import Contact from './pages/Contact';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Wishlist from './pages/Wishlist.js';
 import Cart from './pages/Cart.js';
-
+import CategoryPage from './pages/CategoryPage';
 
 
 function App() {
@@ -28,6 +28,7 @@ function App() {
           <Route path="Rent" element={<Rent />}/>
           <Route path="Wishlist" element={<Wishlist />}/>
           <Route path="Cart" element={<Cart />}/>
+          <Route path="/:category" element={<CategoryPage />} />
         </Route>
       </Routes>
       </BrowserRouter>

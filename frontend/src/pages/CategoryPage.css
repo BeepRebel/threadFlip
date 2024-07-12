@@ -1,0 +1,12 @@
+/* src/pages/CategoryPage.css */
+.category-page {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .category-page h1 {
+    font-size: 2rem;
+    color: pink;
+    margin-bottom: 20px;
+  }
+  
