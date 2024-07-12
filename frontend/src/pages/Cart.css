@@ -43,8 +43,8 @@
   }
   
   .cart-item-image {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border-radius: 10px;
     margin-left: 1rem;
@@ -53,6 +53,7 @@
   .cart-item-details {
     flex-grow: 1;
     margin-left: 1rem;
+    padding-right: 1.5rem;
   }
   
   .cart-item-quantity {
@@ -71,17 +72,18 @@
   }
   
   .quantity-button:hover {
-    background-color: #e0e0e0;
+    background-color: #f8a3d9;
   }
   
-  .cart-item-total {
-    font-weight: bold;
+  .cart-item-total,
+  .cart-item p {
+    text-align: right;
     margin-right: 2rem;
   }
   
   .cart-summary {
     text-align: right;
-    margin-top: 2rem;
+    margin-top: 4rem;
   }
   
   .checkout-button {
@@ -89,10 +91,11 @@
     color: beige;
     border-radius: 25px;
     padding: 13px 33px;
-    font-size: 14px;
+    font-size: 18px;
     text-decoration: none;
     border: none;
     cursor: pointer;
+    margin-top: 2rem;
   }
   
   .checkout-button:hover {
@@ -105,15 +108,15 @@
   }
   
   .cart-button {
+    margin: 50px;
     background-color: magenta;
     color: beige;
     border-radius: 25px;
     padding: 13px 33px;
-    font-size: 14px;
+    font-size: 18px;
     text-decoration: none;
     border: none;
     cursor: pointer;
-    margin: 10px;
   }
   
   .cart-button:hover {
@@ -139,5 +142,35 @@
   .slide-in-bottom.visible {
     animation: slideInFromBottom 1s ease-out forwards;
     opacity: 1; /* Ensure the element becomes visible */
+  }
+  
+  .plus {
+    margin-left: 1rem;
+  }
+  
+  .cart-columns {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cart-column {
+    width: 48%;
+  }
+  
+  .cart-column h3 {
+    text-align: center;
+    font-size: 24px;
+    color: darkslateblue;
+  }
+  
+  .order-summary h4,
+  .rent-options h4 {
+    font-size: 20px;
+    color: darkslateblue;
+  }
+  
+  .cart-item-details h4 {
+    font-size: 18px;
+    color: darkslateblue;
   }
   

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import { faHeart, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Cart.css';
@@ -11,6 +10,7 @@ const Cart = () => {
       name: 'Bohemian Midi Dress',
       price: 29.99,
       quantity: 1,
+      type: 'thrift',
       image: '/images/cart/dress.png'
     },
     {
@@ -18,6 +18,7 @@ const Cart = () => {
       name: 'Tote Bag with Tassel',
       price: 49.99,
       quantity: 2,
+      type: 'thrift',
       image: '/images/cart/bag.png'
     },
     {
@@ -25,9 +26,12 @@ const Cart = () => {
       name: 'Sneaker Wedges',
       price: 19.99,
       quantity: 1,
+      type: 'rent',
       image: '/images/cart/sneaker.png'
     }
   ]);
+
+  const [rentDays, setRentDays] = useState(3);
 
   useEffect(() => {
     const sections = document.querySelectorAll('.slide-in-bottom');
@@ -51,7 +55,6 @@ const Cart = () => {
       observer.observe(section);
     });
 
-    // Cleanup function to unobserve elements when component unmounts
     return () => {
       sections.forEach(section => {
         observer.unobserve(section);
@@ -59,41 +62,110 @@ const Cart = () => {
     };
   }, []);
 
-  const calculateTotal = () => {
-    return cartItems.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2);
+  const calculateTotal = (type) => {
+    return cartItems
+      .filter(item => item.type === type)
+      .reduce((total, item) => total + item.price * item.quantity, 0)
+      .toFixed(2);
   };
 
   const updateQuantity = (id, increment) => {
     setCartItems(prevItems =>
-      prevItems
-        .map(item =>
-          item.id === id
-            ? { ...item, quantity: Math.max(0, item.quantity + increment) }
-            : item
-        )
-        .filter(item => item.quantity > 0)
+      prevItems.map(item =>
+        item.id === id
+          ? { ...item, quantity: Math.max(0, item.quantity + increment) }
+          : item
+      ).filter(item => item.quantity > 0)
     );
   };
 
-  if (cartItems.length === 0) {
-    return (
-      <section className='cart-wrapper py-5'>
-        <div className='cart slide-in-bottom'>
-          <p>My Cart</p>
-        </div>
-        <div className='container-xxl slide-in-bottom margin'>
-          <div className='row'>
-            <div className='col-12 text-center'>
-              <img src='/images/cart/empty-cart.png' className='empty-cart-image' alt='Empty Cart' />
-              <h4>Your cart is empty</h4>
-              <Link to='/rent' className='cart-button'>Rent Items</Link>
-              <Link to='/product' className='cart-button'>Thrift Items</Link>
+  const handleRentDaysChange = (e) => {
+    setRentDays(parseInt(e.target.value));
+  };
+
+  const renderThriftCart = () => (
+    <div className='thrift-cart'>
+      <h3>Thrift Cart</h3>
+      <div className='cart-items'>
+        {cartItems.filter(item => item.type === 'thrift').map(item => (
+          <div key={item.id} className='cart-item d-flex justify-content-between align-items-center'>
+            <img src={item.image} className='cart-item-image' alt={item.name} />
+            <div className='cart-item-details'>
+              <h4>{item.name}</h4>
+              <p style={{ marginLeft: '2rem' }}>${item.price}</p>
+            </div>
+            <div className='cart-item-quantity'>
+              <button className='quantity-button' onClick={() => updateQuantity(item.id, -1)}>-</button>
+              <span>{item.quantity}</span>
+              <button className='quantity-button plus' disabled={true}>+</button>
+            </div>
+            <div className='cart-item-total'>
+              <p>${(item.price * item.quantity).toFixed(2)}</p>
             </div>
           </div>
+        ))}
+      </div>
+      <div className='order-summary'>
+        <h4>Order Summary</h4>
+        <p>Total: ${calculateTotal('thrift')}</p>
+        <p>Discount: Apply Coupon</p>
+        <p>Shipping Charges: Free (-$10)</p>
+        <button className='checkout-button'>Proceed to Checkout</button>
+        <div className='payment-options'>
+          <FontAwesomeIcon icon={faShoppingCart} size='2x' />
+          <FontAwesomeIcon icon={faHeart} size='2x' />
         </div>
-      </section>
-    );
-  }
+      </div>
+    </div>
+  );
+
+  const renderRentCart = () => (
+    <div className='rent-cart'>
+      <h3>Rent Cart</h3>
+      <div className='cart-items'>
+        {cartItems.filter(item => item.type === 'rent').map(item => (
+          <div key={item.id} className='cart-item d-flex justify-content-between align-items-center'>
+            <img src={item.image} className='cart-item-image' alt={item.name} />
+            <div className='cart-item-details'>
+              <h4>{item.name}</h4>
+              <p style={{ marginLeft: '2rem' }}>${item.price}</p>
+            </div>
+            <div className='cart-item-quantity'>
+              <button className='quantity-button' onClick={() => updateQuantity(item.id, -1)}>-</button>
+              <span>{item.quantity}</span>
+              <button className='quantity-button plus' onClick={() => updateQuantity(item.id, 1)}>+</button>
+            </div>
+            <div className='cart-item-total'>
+              <p>${(item.price * item.quantity * rentDays).toFixed(2)}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className='rent-options'>
+        <h4>Rent Options</h4>
+        <div>
+          <label htmlFor='days'>Rent for:</label>
+          <select id='days' onChange={handleRentDaysChange} value={rentDays}>
+            <option value='3'>3 days - ${(19.99 * rentDays).toFixed(2)}</option>
+            <option value='4'>4 days - ${(20.99 * rentDays).toFixed(2)}</option>
+            <option value='5'>5 days - ${(21.99 * rentDays).toFixed(2)}</option>
+            <option value='6'>6 days - ${(22.99 * rentDays).toFixed(2)}</option>
+            <option value='7'>7 days - ${(23.99 * rentDays).toFixed(2)}</option>
+            <option value='7'>Request More Days</option>
+          </select>
+        </div>
+        <div>
+          <input type='checkbox' id='terms' />
+          <label htmlFor='moreDays'>I agree to <a href="">terms and conditions</a> of usage of rent items.</label>
+        </div>
+        <div className='order-summary'>
+          <h4>Order Summary</h4>
+          <p>Total: ${(calculateTotal('rent') * rentDays).toFixed(2)}</p>
+        </div>
+        <button className='checkout-button'>Proceed to Checkout</button>
+      </div>
+    </div>
+  );
 
   return (
     <section className='cart-wrapper py-5'>
@@ -101,31 +173,12 @@ const Cart = () => {
         <p>My Cart</p>
       </div>
       <div className='container-xxl slide-in-bottom margin'>
-        <div className='row'>
-          <div className='col-12'>
-            <div className='cart-items'>
-              {cartItems.map(item => (
-                <div key={item.id} className='cart-item d-flex justify-content-between align-items-center'>
-                  <img src={item.image} className='cart-item-image' alt={item.name} />
-                  <div className='cart-item-details'>
-                    <h4>{item.name}</h4>
-                    <p style={{ marginLeft: '2rem' }}>${item.price}</p>
-                  </div>
-                  <div className='cart-item-quantity'>
-                    <button className='quantity-button' onClick={() => updateQuantity(item.id, -1)}>-</button>
-                    <span>{item.quantity}</span>
-                    <button className='quantity-button' onClick={() => updateQuantity(item.id, 1)}>+</button>
-                  </div>
-                  <div className='cart-item-total'>
-                    <p>${(item.price * item.quantity).toFixed(2)}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-            <div className='cart-summary'>
-              <h4>Total: ${calculateTotal()}</h4>
-              <button className='checkout-button'>Proceed to Checkout</button>
-            </div>
+        <div className='cart-columns'>
+          <div className='cart-column'>
+            {renderThriftCart()}
+          </div>
+          <div className='cart-column'>
+            {renderRentCart()}
           </div>
         </div>
       </div>
