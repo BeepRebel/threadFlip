@@ -1,48 +1,50 @@
 .button {
-  bottom: 10%;
-  left: 50%;
-  
   background-color: magenta;
   color: beige;
   border-radius: 25px;
   padding: 13px 33px;
-  font-size: 14px;
+  font-size: 18px;
   text-decoration: none;
   border: none; 
   cursor: pointer; 
-  
-  
+  position: relative;
+  margin-top: 100px!important;
+  margin-left: 50px!important;
 }
 
-.main-banner{
-  margin-top: -1000px;
+.center{
+  
+  margin-top: 10px!important;
+  margin-left:550px!important ;
 }
-
 .button:hover {
   background-color: darkmagenta; 
 }
 
-.banner{
+.banner {
   height: 770px;
-  margin: 0px;
+  margin-top: 75px;
   margin-left: -150px;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.img-fluid {
-  margin-top: 1000px;
+.bannern{
+  height: 875px;
+  position: relative;
+  
+  margin-left: -150px;
 }
 
 .comm {
   margin-left: -125px;
-  margin-top: 0px;
+  margin-top: 75px;
   bottom: 10px;
   left: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: rgb(178, 144, 230);
-  width: 120%;
+  width: 118%;
   padding: 10px;
   height: 300px;
 }
@@ -55,7 +57,7 @@
 }
 
 .log-sign {
-  background-color:darkmagenta;
+  background-color: darkmagenta;
   color: rgb(247, 241, 241);
   border-radius: 10px;
   padding: 10px 20px;
@@ -67,32 +69,36 @@
 }
 
 .log-sign:hover {
-  background-color: rgb(144, 210, 230);
+  background-color: rgb(178, 144, 230);
   color: darkmagenta;
 }
 
 .trend {
   margin-left: -125px;
-  margin-top: 0px;
+  margin-top: 75px;
   bottom: 10px;
   left: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: rgb(230, 144, 161);
-  width: 120%;
+  width: 118%;
   padding: 10px;
   height: 300px;
 }
+
 .trend p {
   margin: 50px;
   font-size: 75px;
   color: azure;
   font-family: "";
 }
+.new{
+  background-color: #B2BFA8;
+}
 
 .rent {
-  background-color:darkmagenta;
+  background-color: darkmagenta;
   color: rgb(247, 241, 241);
   border-radius: 10px;
   padding: 10px 20px;
@@ -101,12 +107,17 @@
   margin-right: 150px;
   font-size: x-large;
   margin-top: 5px;
-  margin-left: 50px;
+  margin-left: 100px;
 }
 
 .rent:hover {
-  background-color: rgb(144, 210, 230);
+  background-color: rgb(230, 144, 161);
   color: darkmagenta;
+}
+
+.gif{
+  height: 300px;
+  margin-left: 50px;
 }
 
 @keyframes fadeIn {
@@ -142,3 +153,45 @@
   animation: slideInFromBottom 1s ease-out forwards;
   opacity: 1; /* Ensure the element becomes visible */
 }
+
+.car{
+  margin-top: 75px;
+}
+
+.center {
+  margin-top: 10px;
+padding-right: 50px;
+font-weight: 600;
+z-index: 1000;
+}
+
+.center::before {
+  content: ">>";
+  position: fixed;
+  margin-left:180px;
+  transition: transform 0.3s;
+}
+
+
+
+.center:hover::before {
+  transform: translateX(7px);
+}
+
+.similar{
+  margin-left: -30px;
+  margin-top: 20px;
+}
+
+
+.social-icons a{
+  font-size: 50px;
+  margin-right: 100px;
+}
+
+.social-icons a:hover{
+  color:pink;
+
+}
+
+
