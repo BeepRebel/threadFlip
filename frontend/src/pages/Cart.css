@@ -223,3 +223,12 @@
   .empty-cart button:hover {
     background-color: darkmagenta;
   }
+
+  .myntra-money-icon{
+    height: 15px;
+  }
+
+  .moneyy{
+    font-size: 10px;
+    text-align: left!important;
+  }

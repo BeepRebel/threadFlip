@@ -4,35 +4,34 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Cart.css';
 
 const Cart = () => {
-    const [cartItems, setCartItems] = useState([
-        {
-          id: 1,
-          name: 'Bohemian Midi Dress',
-          price: 29.99,
-          quantity: 1,
-          type: 'thrift',
-          stock: 1,  // Add stock property
-          image: '/images/cart/dress.png'
-        },
-        {
-          id: 2,
-          name: 'Tote Bag with Tassel',
-          price: 49.99,
-          quantity: 2,
-          type: 'thrift',
-          stock: 2,  // Add stock property
-          image: '/images/cart/bag.png'
-        },
-        {
-          id: 3,
-          name: 'Sneaker Wedges',
-          price: 19.99,
-          quantity: 1,
-          type: 'rent',
-          image: '/images/cart/sneaker.png'
-        }
-      ]);
-      
+  const [cartItems, setCartItems] = useState([
+    {
+      id: 1,
+      name: 'Bohemian Midi Dress',
+      price: 29.99,
+      quantity: 1,
+      type: 'thrift',
+      stock: 1,  // Add stock property
+      image: '/images/cart/dress.png'
+    },
+    {
+      id: 2,
+      name: 'Tote Bag with Tassel',
+      price: 49.99,
+      quantity: 2,
+      type: 'thrift',
+      stock: 2,  // Add stock property
+      image: '/images/cart/bag.png'
+    },
+    {
+      id: 3,
+      name: 'Sneaker Wedges',
+      price: 19.99,
+      quantity: 1,
+      type: 'rent',
+      image: '/images/cart/sneaker.png'
+    }
+  ]);
 
   const [rentDays, setRentDays] = useState(3);
 
@@ -86,7 +85,6 @@ const Cart = () => {
       }).filter(item => item.quantity > 0)
     );
   };
-  
 
   const handleRentDaysChange = (e) => {
     setRentDays(parseInt(e.target.value));
@@ -94,7 +92,7 @@ const Cart = () => {
 
   const renderThriftCart = () => {
     const thriftItems = cartItems.filter(item => item.type === 'thrift');
-    
+
     return (
       <div className='thrift-cart'>
         <h3>Thrift Cart</h3>
@@ -113,6 +111,7 @@ const Cart = () => {
                 <div className='cart-item-details'>
                   <h4>{item.name}</h4>
                   <p style={{ marginLeft: '2rem' }}>${item.price}</p>
+                  <p className='moneyy'><img src="/images/money.png" alt="Myntra Money" className="myntra-money-icon" /> Use MyntraMoney!</p>
                 </div>
                 <div className='cart-item-quantity'>
                   <button className='quantity-button' onClick={() => updateQuantity(item.id, -1)}>-</button>
@@ -143,7 +142,6 @@ const Cart = () => {
       </div>
     );
   };
-  
 
   const renderRentCart = () => {
     const rentItems = cartItems.filter(item => item.type === 'rent');
@@ -166,6 +164,7 @@ const Cart = () => {
                 <div className='cart-item-details'>
                   <h4>{item.name}</h4>
                   <p style={{ marginLeft: '2rem' }}>${item.price}</p>
+                  <p className='moneyy'><img src="/images/money.png" alt="Myntra Money" className="myntra-money-icon" /> Use MyntraMoney!</p>
                 </div>
                 <div className='cart-item-quantity'>
                   <button className='quantity-button' onClick={() => updateQuantity(item.id, -1)}>-</button>
@@ -206,7 +205,6 @@ const Cart = () => {
               <img src='/images/cart/visa.jpg' alt='Visa' />
               <img src='/images/cart/paytm.jpg' alt='Paytm' />
               <img src='/images/cart/master.jpg' alt='Mastercard' />
-              
             </div>
           </div>
         )}
