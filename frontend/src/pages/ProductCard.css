@@ -70,7 +70,9 @@
   .card-text {
     font-size: 1em;
     color: #777;
-    margin-bottom: 16px;
+    margin-bottom: 5px;
+    text-decoration:line-through;
+    text-align:start;
   }
   
   .btn-primary {
@@ -94,5 +96,12 @@
   .btn-primary .fas {
     margin-right: 8px;
     color: white;
+  }
+
+  .renting {
+    color: rgb(219, 60, 60);
+    size: 0.5em;
+    text-align: end;
+    text-decoration: none;
   }
   
