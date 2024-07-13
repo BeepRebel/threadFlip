@@ -41,6 +41,7 @@ const Rent = () => {
 
     });
 
+
     // Cleanup function to unobserve elements when component unmounts
     return () => {
       sections.forEach(section => {
@@ -67,12 +68,17 @@ const Rent = () => {
     { title: 'INDO WESTERN', src: '/images/rent/indo.png' },
   ];
 
+  const bannerImages = [
+    '/images/img1.jpg',
+    '/images/img2.png',
+    '/images/img3.png'
+  ];
   return (
     <div className='store-wrapper home-wrapper-2 py-5 fade-in'>
       <div className='container-xxl'>
         <div className='row'>
           <div className='col-12 slide-in-bottom'>
-            <CarouselComponent />
+          <CarouselComponent images={bannerImages} />
           </div>
           <div className='row mt-3' >
           <h2 className="heading">Shop by Category</h2>
