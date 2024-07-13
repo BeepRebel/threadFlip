@@ -22,7 +22,8 @@
         "customer": "Jane Smith",
         "review": "Love the design and the range. Perfect for my daily commute."
       }
-    ]
+    ],
+    "condition": 1
   },
   {
     "id": 2,
@@ -48,7 +49,8 @@
         "customer": "Jane Smith",
         "review": "Love the design and the range. Perfect for my daily commute."
       }
-    ]
+    ],
+    "condition": 2
   },
   {
     "id": 3,
@@ -72,11 +74,12 @@
         "customer": "Chris Lee",
         "review": "Great quality and durability."
       }
-    ]
+    ],
+    "condition": 1
   },
   {
     "id": 4,
-    "brand": "Apple",
+    "brand": "Frill-trimmed strappy dress",
     "title": "iPhone 12",
     "price": 80000,
     "images": [
@@ -86,8 +89,8 @@
     ],
     "rating": 4,
     "details": "Latest smartphone with advanced features and high performance.",
-    "name": "iPhone 12",
-    "description": "Experience the best of technology with our new iPhone 12.",
+    "name": "Frill-trimmed strappy dress",
+    "description": "Calf-length, loose-fit dress in woven fabric with tie-top spaghetti shoulder straps and a wide frill trim around the top. V-neckline at the front and narrow elastication at the back. Unlined.",
     "reviews": [
       {
         "customer": "Sara Connor",
@@ -97,7 +100,8 @@
         "customer": "James Bond",
         "review": "Smooth performance and excellent camera quality."
       }
-    ]
+    ],
+    "condition": 2
   },
   {
     "id": 5,
@@ -121,7 +125,8 @@
         "customer": "Bruce Wayne",
         "review": "Great for tracking workouts and health metrics."
       }
-    ]
+    ],
+    "condition": 3
   },
   {
     "id": 6,
@@ -146,7 +151,8 @@
         "customer": "Diana Prince",
         "review": "Excellent noise-cancelling and sound quality."
       }
-    ]
+    ],
+    "condition": 2
   },
   {
     "id": 7,
@@ -170,7 +176,8 @@
         "customer": "Natasha Romanoff",
         "review": "Handles all my tasks with ease."
       }
-    ]
+    ],
+    "condition": 1
   },
   {
     "id": 8,
@@ -194,7 +201,8 @@
         "customer": "Bucky Barnes",
         "review": "Love the classic look."
       }
-    ]
+    ],
+    "condition": 3
   },
   {
     "id": 9,
@@ -219,7 +227,8 @@
         "customer": "Vanessa Carlysle",
         "review": "Perfect for sunny days."
       }
-    ]
+    ],
+    "condition": "2"
   },
   {
     "id": 10,
@@ -243,128 +252,7 @@
         "customer": "Tony Stark",
         "review": "Love the luxurious feel and design."
       }
-    ]
-  },
-  {
-    "id": 11,
-    "brand": "Chanel",
-    "title": "Perfume",
-    "price": 15000,
-    "images": [
-      "/images/thriftProducts/11-1.jpg",
-      "/images/thriftProducts/11-2.jpg"
     ],
-    "rating": 5,
-    "details": "Elegant and long-lasting fragrance for special occasions.",
-    "name": "Perfume",
-    "description": "Our Chanel perfume offers a captivating scent for any occasion.",
-    "reviews": [
-      {
-        "customer": "Selina Kyle",
-        "review": "Absolutely love this fragrance!"
-      },
-      {
-        "customer": "Harleen Quinzel",
-        "review": "Long-lasting and elegant."
-      }
-    ]
-  },
-  {
-    "id": 12,
-    "brand": "Puma",
-    "title": "Sports T-Shirt",
-    "price": 2000,
-    "images": [
-      "/images/thriftProducts/12-1.jpg",
-      "/images/thriftProducts/12-2.jpg"
-    ],
-    "rating": 4,
-    "details": "Comfortable and breathable sports t-shirt for active wear.",
-    "name": "Sports T-Shirt",
-    "description": "Stay cool and comfortable with our Puma sports t-shirt.",
-    "reviews": [
-      {
-        "customer": "Barry Allen",
-        "review": "Perfect for running and workouts."
-      },
-      {
-        "customer": "Arthur Curry",
-        "review": "Very comfortable and stylish."
-      }
-    ]
-  },
-  {
-    "id": 13,
-    "brand": "Rolex",
-    "title": "Luxury Watch",
-    "price": 500000,
-    "images": [
-      "/images/thriftProducts/13-1.jpg",
-      "/images/thriftProducts/13-2.jpg",
-      "/images/thriftProducts/13-3.jpg"
-    ],
-    "rating": 5,
-    "details": "Exquisite luxury watch with impeccable craftsmanship.",
-    "name": "Luxury Watch",
-    "description": "Our Rolex luxury watch is a symbol of status and elegance.",
-    "reviews": [
-      {
-        "customer": "Bruce Wayne",
-        "review": "An absolute masterpiece."
-      },
-      {
-        "customer": "Clark Kent",
-        "review": "Timeless design and exceptional quality."
-      }
-    ]
-  },
-  {
-    "id": 14,
-    "brand": "Prada",
-    "title": "Handbag",
-    "price": 60000,
-    "images": [
-      "/images/thriftProducts/14-1.jpg",
-      "/images/thriftProducts/14-2.jpg"
-    ],
-    "rating": 5,
-    "details": "Stylish and spacious handbag for everyday use.",
-    "name": "Handbag",
-    "description": "Our Prada handbag combines style and functionality.",
-    "reviews": [
-      {
-        "customer": "Diana Prince",
-        "review": "Beautiful and practical handbag."
-      },
-      {
-        "customer": "Barbara Minerva",
-        "review": "Love the design and quality."
-      }
-    ]
-  },
-  {
-    "id": 15,
-    "brand": "Tesla",
-    "title": "Model S",
-    "price": 1000000,
-    "images": [
-      "/images/thriftProducts/15-1.jpg",
-      "/images/thriftProducts/15-2.jpg",
-      "/images/thriftProducts/15-3.jpg"
-    ],
-    "rating": 5,
-    "details": "Electric car with top-notch performance and innovative features.",
-    "name": "Model S",
-    "description": "Our Tesla Model S offers an unmatched driving experience with zero emissions.",
-    "reviews": [
-      {
-        "customer": "Elon Musk",
-        "review": "Best electric car on the market."
-      },
-      {
-        "customer": "Tony Stark",
-        "review": "Amazing performance and technology."
-      }
-    ]
+    "condition": 1
   }
 ]
