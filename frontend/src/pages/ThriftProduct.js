@@ -1,12 +1,36 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './ThriftProduct.css';
 
 const ThriftProduct = () => {
-  const [mainImage, setMainImage] = useState('/images/home/home-banner-1.png');
+  const id = 2; // Assuming you have a specific product ID or you can dynamically get it
+  const [product, setProduct] = useState(null);
+  const [mainImage, setMainImage] = useState(null);
 
-  const handleThumbnailClick = (image) => {
-    setMainImage(image);
+  useEffect(() => {
+    const fetchProductData = async () => {
+      try {
+        const response = await fetch('/products.json');
+        const products = await response.json();
+        const productData = products.find(prod => prod.id === parseInt(id));
+        if (productData) {
+          setProduct(productData);
+          if (productData.image) {
+            setMainImage(productData.image);
+          }
+        }
+      } catch (error) {
+        console.error('Error fetching the product data:', error);
+      }
+    };
+
+    fetchProductData();
+  }, [id]);
+
+  const handleThumbnailClick = (thumbnail) => {
+    setMainImage(thumbnail);
   };
+
+  if (!product) return <div>Loading...</div>;
 
   return (
     <>
@@ -18,30 +42,23 @@ const ThriftProduct = () => {
                 <img src={mainImage} alt="Product Banner" className="product-img" />
               </div>
               <div className="thumbnail-images d-flex mt-3">
-                <img
-                  src="/images/home/home-banner-1.png"
-                  alt="Thumbnail 1"
-                  className="img-thumbnail"
-                  onClick={() => handleThumbnailClick('/images/home/home-banner-1.png')}
-                />
-                <img
-                  src="/images/home/home-banner-2.png"
-                  alt="Thumbnail 2"
-                  className="img-thumbnail"
-                  onClick={() => handleThumbnailClick('/images/home/home-banner-2.png')}
-                />
-                <img
-                  src="/images/home/home-banner-3.png"
-                  alt="Thumbnail 3"
-                  className="img-thumbnail"
-                  onClick={() => handleThumbnailClick('/images/home/home-banner-3.png')}
-                />
+                {product.images.map((image) => (
+                  <img
+                    src={image}
+                    className="thumbnail-img"
+                    onClick={() => handleThumbnailClick(image)}
+                  />
+                ))}
               </div>
             </div>
             <div className='col-6'>
               <div className='product-details'>
-                <h2>Title of the Product</h2>
-                <p>Product Tag</p>
+                <h2>{product.title}</h2>
+                <h5>Brand: {product.brand}</h5>
+                <p>Price: ₹{product.price}</p>
+                <div className="rating">
+                  {/* Display rating stars */}
+                </div>
                 <div className="quantity-selector">
                   <label htmlFor="quantity">Quantity:</label>
                   <input
@@ -66,8 +83,10 @@ const ThriftProduct = () => {
               <div className='review-head d-flex justify-content-between align-items-end'>
                 <div>
                   <h4>Customer Reviews</h4>
-                  <p>Based on 2 reviews</p>
+                  <p>Based on {product.reviews.length} reviews</p>
                 </div>
+              </div>
+              <div className='reviews'>
               </div>
             </div>
           </div>
@@ -80,22 +99,14 @@ const ThriftProduct = () => {
             <div className='col-12'>
               <h4>Description</h4>
               <div className='bg-white p-3'>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et dui at lacus eleifend hendrerit. Duis in velit quis urna fermentum pharetra sit amet at lacus.</p>
+                <p>{product.description}</p>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      <section className='review-wrapper py-5 home-wrapper-2'>
-        <div className='container-xxl'>
-          <div className='row'>
-            <div className='col-6'></div>
-          </div>
-        </div>
-      </section>
     </>
   );
-}
+};
 
 export default ThriftProduct;

@@ -14,20 +14,8 @@
 }
 
 .btn-primary {
-  background-color: pink; /* Example primary button color */
-  color: #fff; /* Example button text color */
-}
-
-.review-wrapper {
-  /* Styles for the review section */
-}
-
-.review-head {
-  /* Styles for the review heading */
-}
-
-.description-wrapper {
-  /* Styles for the description section */
+  background-color: pink; 
+  color: #fff; 
 }
 
 .description-wrapper h4 {
@@ -44,7 +32,9 @@
 /* Additional styling for other sections as needed */
 .main-product-image img {
   width: 100%;
-  height: 50vh;
+  height:60vh ;
+  object-fit: contain;
+  justify-content: center;
 }
 
 .thumbnail-images img {
