@@ -12,6 +12,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Wishlist from './pages/Wishlist.js';
 import Cart from './pages/Cart.js';
 import CategoryPage from './pages/CategoryPage';
+import SellPage from './pages/SellPage.js';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
@@ -31,6 +32,8 @@ function App() {
           <Route path="Wishlist" element={<Wishlist />}/>
           <Route path="Cart" element={<Cart />}/>
           <Route path="/:category" element={<CategoryPage />} />
+          <Route path="sell" element={<SellPage />} />
+
         </Route>
       </Routes>
       </BrowserRouter>

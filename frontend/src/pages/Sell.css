@@ -1,0 +1,27 @@
+.sell-block {
+    background-color: #f8f9fa; /* Example colorful background */
+    padding: 50px 0;
+  }
+  
+  .sell-text {
+    text-align: left;
+  }
+  
+  .stepwise-guide {
+    padding: 50px 0;
+  }
+  
+  .step-card {
+    background-color: #ffffff; /* Card background color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Example shadow */
+    margin-bottom: 20px;
+  }
+  
+  .space {
+    height: 50px; /* Adjust as needed for spacing */
+  }
+  
+  /* Additional styling can be added based on your design preferences */
+  
