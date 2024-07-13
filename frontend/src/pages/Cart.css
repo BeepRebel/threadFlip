@@ -78,11 +78,11 @@
   .cart-item-total,
   .cart-item p {
     text-align: right;
-    margin-right: 2rem;
+    margin-right: 4rem;
   }
   
   .cart-summary {
-    text-align: right;
+    text-align: left;
     margin-top: 4rem;
   }
   
@@ -159,18 +159,67 @@
   
   .cart-column h3 {
     text-align: center;
-    font-size: 24px;
-    color: darkslateblue;
+    font-size: 40px;
+    color: #dbafaf;
+    margin-bottom: 30px;
   }
   
   .order-summary h4,
   .rent-options h4 {
-    font-size: 20px;
-    color: darkslateblue;
+    font-size: 30px;
+    color: #dbafaf;
   }
   
   .cart-item-details h4 {
     font-size: 18px;
     color: darkslateblue;
   }
+
+  .order-summary{
+    text-align: right;
+    margin-top: 4rem;
+  }
+
+  .side,.ah{
+    margin-left: 1rem;
+    margin-top: 2rem;
+    font-size: 15px;
+  }
   
+  .payment-options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    width:200px;
+    margin-left: 26rem;
+  }
+  
+  .payment-options img {
+    width: 40px;
+    height: 30px;
+  }
+  
+  .empty-cart {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .empty-cart img {
+    width: 200px;
+    margin-bottom: 1rem;
+  }
+  
+  .empty-cart button {
+    background-color: magenta;
+    color: beige;
+    border-radius: 25px;
+    padding: 13px 33px;
+    font-size: 18px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .empty-cart button:hover {
+    background-color: darkmagenta;
+  }
