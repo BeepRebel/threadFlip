@@ -259,7 +259,7 @@ const Signup = () => {
                                 type="reset"
                                 name="reset"
                                 value="Reset"
-                                className="btn btn-secondary"
+                                className="btn btn-primary"
                                 autoComplete="off"
                                 onClick={handleReset}
                             />

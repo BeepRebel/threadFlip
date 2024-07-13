@@ -48,12 +48,14 @@ const Home = () => {
                 <button className='log-sign'>Login/SignUp</button>
               </div>
               <div className='trend slide-in-bottom'>
-                <button className='rent'>Rent</button>
-                <button className='rent'>Thrift</button>
+                <button className='rent'>Rent Items</button>
+                <button className='rent'>Thrift Items</button>
                 <p>Discover Latest Trends</p>
               </div>
               
+              
               <img src="/images/home/banner.png" className='banner slide-in-bottom' alt="main-banner" />
+              <h1>Our Bestsellers</h1>
               <div className='car col-12 mb-3'>
                 <Carousel controls={false} indicators={false} interval={2000} className='slide-in-bottom'>
                   <Carousel.Item>
@@ -77,6 +79,7 @@ const Home = () => {
                         </div>
                       </div>
                     </div>
+                    
                   </Carousel.Item>
                   <Carousel.Item>
                     <div className='d-flex justify-content-between'>
