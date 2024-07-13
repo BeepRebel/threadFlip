@@ -4,7 +4,11 @@
     "brand": "Zara",
     "title": "BootCut Jeans",
     "price": 3000,
-    "image": "/images/home/home-banner-1.png",
+    "images": [
+      "/images/thriftProducts/1-1.jpg",
+      "/images/thriftProducts/1-2.jpg",
+      "/images/thriftProducts/1-3.jpg"
+    ],
     "rating": 3,
     "details": "An eco-friendly electric scooter with a range of 50 miles on a single charge.",
     "name": "Electric Scooter",
@@ -25,7 +29,12 @@
     "brand": "Nike",
     "title": "Running Shoes",
     "price": 5000,
-    "image": "/images/home/home-banner-1.png",
+    "images": [
+      "/images/thriftProducts/2-1.jpg",
+      "/images/thriftProducts/2-2.jpg",
+      "/images/thriftProducts/2-3.jpg",
+      "/images/thriftProducts/2-4.jpg"
+    ],
     "rating": 4,
     "details": "An eco-friendly electric scooter with a range of 50 miles on a single charge.",
     "name": "Electric Scooter",
@@ -38,6 +47,323 @@
       {
         "customer": "Jane Smith",
         "review": "Love the design and the range. Perfect for my daily commute."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "brand": "Adidas",
+    "title": "Soccer Ball",
+    "price": 1500,
+    "images": [
+      "/images/thriftProducts/3-1.jpg",
+      "/images/thriftProducts/3-2.jpg"
+    ],
+    "rating": 5,
+    "details": "Durable soccer ball designed for long-lasting performance on the field.",
+    "name": "Soccer Ball",
+    "description": "Our soccer ball is built to withstand intense matches and practice sessions.",
+    "reviews": [
+      {
+        "customer": "Alex Johnson",
+        "review": "Best soccer ball I've ever used!"
+      },
+      {
+        "customer": "Chris Lee",
+        "review": "Great quality and durability."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "brand": "Apple",
+    "title": "iPhone 12",
+    "price": 80000,
+    "images": [
+      "/images/thriftProducts/4-1.jpg",
+      "/images/thriftProducts/4-2.jpg",
+      "/images/thriftProducts/4-3.jpg"
+    ],
+    "rating": 4,
+    "details": "Latest smartphone with advanced features and high performance.",
+    "name": "iPhone 12",
+    "description": "Experience the best of technology with our new iPhone 12.",
+    "reviews": [
+      {
+        "customer": "Sara Connor",
+        "review": "Amazing phone with great features."
+      },
+      {
+        "customer": "James Bond",
+        "review": "Smooth performance and excellent camera quality."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "brand": "Samsung",
+    "title": "Galaxy Watch",
+    "price": 20000,
+    "images": [
+      "/images/thriftProducts/5-1.jpg",
+      "/images/thriftProducts/5-2.jpg"
+    ],
+    "rating": 4,
+    "details": "Smartwatch with fitness tracking and advanced health monitoring features.",
+    "name": "Galaxy Watch",
+    "description": "Stay connected and healthy with our Samsung Galaxy Watch.",
+    "reviews": [
+      {
+        "customer": "Peter Parker",
+        "review": "Very useful and stylish smartwatch."
+      },
+      {
+        "customer": "Bruce Wayne",
+        "review": "Great for tracking workouts and health metrics."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "brand": "Sony",
+    "title": "Wireless Headphones",
+    "price": 15000,
+    "images": [
+      "/images/thriftProducts/6-1.jpg",
+      "/images/thriftProducts/6-2.jpg",
+      "/images/thriftProducts/6-3.jpg"
+    ],
+    "rating": 5,
+    "details": "Noise-cancelling wireless headphones with superior sound quality.",
+    "name": "Wireless Headphones",
+    "description": "Experience immersive sound with our Sony wireless headphones.",
+    "reviews": [
+      {
+        "customer": "Clark Kent",
+        "review": "Best headphones I've ever had!"
+      },
+      {
+        "customer": "Diana Prince",
+        "review": "Excellent noise-cancelling and sound quality."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "brand": "HP",
+    "title": "Laptop",
+    "price": 60000,
+    "images": [
+      "/images/thriftProducts/7-1.jpg",
+      "/images/thriftProducts/7-2.jpg"
+    ],
+    "rating": 4,
+    "details": "High-performance laptop suitable for gaming and professional use.",
+    "name": "Laptop",
+    "description": "Our HP laptop offers top-notch performance for all your needs.",
+    "reviews": [
+      {
+        "customer": "Tony Stark",
+        "review": "Powerful laptop with excellent build quality."
+      },
+      {
+        "customer": "Natasha Romanoff",
+        "review": "Handles all my tasks with ease."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "brand": "Levi's",
+    "title": "Denim Jacket",
+    "price": 4500,
+    "images": [
+      "/images/thriftProducts/8-1.jpg",
+      "/images/thriftProducts/8-2.jpg"
+    ],
+    "rating": 4,
+    "details": "Stylish and durable denim jacket for all seasons.",
+    "name": "Denim Jacket",
+    "description": "Our Levi's denim jacket is a timeless wardrobe staple.",
+    "reviews": [
+      {
+        "customer": "Steve Rogers",
+        "review": "Great fit and quality."
+      },
+      {
+        "customer": "Bucky Barnes",
+        "review": "Love the classic look."
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "brand": "Ray-Ban",
+    "title": "Sunglasses",
+    "price": 12000,
+    "images": [
+      "/images/thriftProducts/9-1.jpg",
+      "/images/thriftProducts/9-2.jpg",
+      "/images/thriftProducts/9-3.jpg"
+    ],
+    "rating": 5,
+    "details": "Classic sunglasses with UV protection and stylish design.",
+    "name": "Sunglasses",
+    "description": "Protect your eyes and look great with our Ray-Ban sunglasses.",
+    "reviews": [
+      {
+        "customer": "Wade Wilson",
+        "review": "Super cool and comfortable."
+      },
+      {
+        "customer": "Vanessa Carlysle",
+        "review": "Perfect for sunny days."
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "brand": "Gucci",
+    "title": "Leather Wallet",
+    "price": 10000,
+    "images": [
+      "/images/thriftProducts/10-1.jpg",
+      "/images/thriftProducts/10-2.jpg"
+    ],
+    "rating": 5,
+    "details": "Luxury leather wallet with multiple card slots and compartments.",
+    "name": "Leather Wallet",
+    "description": "Our Gucci leather wallet is the epitome of elegance and functionality.",
+    "reviews": [
+      {
+        "customer": "Bruce Banner",
+        "review": "High-quality wallet with plenty of space."
+      },
+      {
+        "customer": "Tony Stark",
+        "review": "Love the luxurious feel and design."
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "brand": "Chanel",
+    "title": "Perfume",
+    "price": 15000,
+    "images": [
+      "/images/thriftProducts/11-1.jpg",
+      "/images/thriftProducts/11-2.jpg"
+    ],
+    "rating": 5,
+    "details": "Elegant and long-lasting fragrance for special occasions.",
+    "name": "Perfume",
+    "description": "Our Chanel perfume offers a captivating scent for any occasion.",
+    "reviews": [
+      {
+        "customer": "Selina Kyle",
+        "review": "Absolutely love this fragrance!"
+      },
+      {
+        "customer": "Harleen Quinzel",
+        "review": "Long-lasting and elegant."
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "brand": "Puma",
+    "title": "Sports T-Shirt",
+    "price": 2000,
+    "images": [
+      "/images/thriftProducts/12-1.jpg",
+      "/images/thriftProducts/12-2.jpg"
+    ],
+    "rating": 4,
+    "details": "Comfortable and breathable sports t-shirt for active wear.",
+    "name": "Sports T-Shirt",
+    "description": "Stay cool and comfortable with our Puma sports t-shirt.",
+    "reviews": [
+      {
+        "customer": "Barry Allen",
+        "review": "Perfect for running and workouts."
+      },
+      {
+        "customer": "Arthur Curry",
+        "review": "Very comfortable and stylish."
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "brand": "Rolex",
+    "title": "Luxury Watch",
+    "price": 500000,
+    "images": [
+      "/images/thriftProducts/13-1.jpg",
+      "/images/thriftProducts/13-2.jpg",
+      "/images/thriftProducts/13-3.jpg"
+    ],
+    "rating": 5,
+    "details": "Exquisite luxury watch with impeccable craftsmanship.",
+    "name": "Luxury Watch",
+    "description": "Our Rolex luxury watch is a symbol of status and elegance.",
+    "reviews": [
+      {
+        "customer": "Bruce Wayne",
+        "review": "An absolute masterpiece."
+      },
+      {
+        "customer": "Clark Kent",
+        "review": "Timeless design and exceptional quality."
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "brand": "Prada",
+    "title": "Handbag",
+    "price": 60000,
+    "images": [
+      "/images/thriftProducts/14-1.jpg",
+      "/images/thriftProducts/14-2.jpg"
+    ],
+    "rating": 5,
+    "details": "Stylish and spacious handbag for everyday use.",
+    "name": "Handbag",
+    "description": "Our Prada handbag combines style and functionality.",
+    "reviews": [
+      {
+        "customer": "Diana Prince",
+        "review": "Beautiful and practical handbag."
+      },
+      {
+        "customer": "Barbara Minerva",
+        "review": "Love the design and quality."
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "brand": "Tesla",
+    "title": "Model S",
+    "price": 1000000,
+    "images": [
+      "/images/thriftProducts/15-1.jpg",
+      "/images/thriftProducts/15-2.jpg",
+      "/images/thriftProducts/15-3.jpg"
+    ],
+    "rating": 5,
+    "details": "Electric car with top-notch performance and innovative features.",
+    "name": "Model S",
+    "description": "Our Tesla Model S offers an unmatched driving experience with zero emissions.",
+    "reviews": [
+      {
+        "customer": "Elon Musk",
+        "review": "Best electric car on the market."
+      },
+      {
+        "customer": "Tony Stark",
+        "review": "Amazing performance and technology."
       }
     ]
   }
