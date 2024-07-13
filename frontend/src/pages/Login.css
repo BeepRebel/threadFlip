@@ -1,0 +1,69 @@
+/* About.css */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .font-weight-bold {
+    font-weight: bold;
+  }
+  
+  .font-weight-regular {
+    font-weight: 400;
+  }
+  
+  .slide-in-bottom {
+    animation: slide-in-bottom 0.5s forwards;
+  }
+  
+  @keyframes slide-in-bottom {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .bnew{
+    width:100%;
+    margin-top: 60px;
+    margin-left: 0px;
+  }
+
+  .form-group{
+    margin-top: 25px;
+    padding-top: 50px;
+    font-size:20px;
+    color:#87396a;
+    
+    
+  }
+
+  .class{
+    background-color: #fcd0e6c9;
+    padding-left: 50px;
+    padding-right: 50px;
+
+  }
+
+  .btn{
+    background-color: #87396a;
+    color:#fcd0e6c9;
+    margin-top:75px;
+    margin-bottom: 75px;
+    border: none;
+    width: 100%;
+    
+  }
+
+  .btn:hover{
+    color: #87396a;
+    background-color:#fcd0e6c9;
+    
+  }
+  
+  .jk{
+    margin-bottom:100px
+  }
