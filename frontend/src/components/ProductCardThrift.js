@@ -1,37 +1,51 @@
 import React from 'react';
-import ReactStars from "react-rating-stars-component";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
-import {faHeart } from '@fortawesome/free-solid-svg-icons';
 import './ProductCardThrift.css';
 
-const ProductCardThrift = ({id , brand, title, price, image, rating }) => {
+
+const ProductCardThrift = ({id , brand, title, price, image, rating, condition }) => {
+  const getConditionDetails = (condition) => {
+    switch (condition) {
+      case 1:
+        return { text: 'Good', color: 'green' };
+      case 2:
+        return { text: 'Excellent', color: 'blue' };
+      case 3:
+        return { text: 'Moderate', color: 'orange' };
+      case 4:
+        return { text: 'Poor', color: 'red' };
+      default:
+        return { text: 'Unknown', color: 'grey' };
+    }
+  };
+
+  const { text, color } = getConditionDetails(condition);
   return (
-    <div className='col-md-3'>
-      <div className='card product-card position-relative'>
-        <div className='wishlist-icon position-absolute'>
-        <Link to="#wishlist" className='wishlist-icon'><FontAwesomeIcon icon={faHeart} /></Link>
-        </div>
-        <Link to="{`${id}`}">
-          <img src={image} className='card-img-top' alt="product-image" />
+    <div className="col-md-3 mb-4">
+      <div className="card product-card-thrift">
+      <Link to="{`${id}`}">
+          <div className="card-img-wrapper">
+            <img src={image} alt={title} className="card-img-top" />
+            <div className="heart-icon">
+              <i className="far fa-heart"></i>
+            </div>
+            <div className="rating-box">
+              <i className="fas fa-star"></i> {rating}
+            </div>
+          </div>
+          <div className="card-body">
+            <h5 className="card-title">{title}</h5>
+            <p className="card-text">{`₹${price}`}</p>
+            <span style={{ color }}>Condition: {text}</span>
+            <button className="btn btn-primary mt-2">
+              <i className="fas fa-shopping-bag"></i> Add to Bag
+            </button>
+          </div>
         </Link>
-        <div className='card-body'>
-          <h6 className='card-subtitle mb-2 text-muted'>{brand}</h6>
-          <h5 className='card-title'>{title}</h5>
-          <p className='card-text'>₹{price}</p>
-          <ReactStars
-            count={5}
-            size={24}
-            edit={false}
-            value={rating}
-            activeColor="#ffd700"
-          />
-          <button className='btn btn-primary mt-3 w-100'>Thrift</button>
-        </div>
       </div>
     </div>
   );
 };
-
 export default ProductCardThrift;
+
 

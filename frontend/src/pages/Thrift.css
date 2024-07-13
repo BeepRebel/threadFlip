@@ -1,23 +1,54 @@
-.one{
-    margin: 1000px!important;
-}
-
-
 .filter-card{
-    background-color: beige;
-    border-radius: 10px;
-    padding: 10px 15px;
-    
+  background-color: black;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
 }
 
-.filter-title{
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 600;
-    color: purple;
-    margin-bottom: 20px;
+.fade-in {
+  animation: fadeIn 2s ease-out;
 }
 
-.form-check-input:checked {
-    background-color: pink;
+/* src/Rent.css */
+.slide-in-bottom {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.slide-in-bottom.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.banner-text {
+  color: white;
+}
+.banner-text h3 {
+  font-weight: 600;
+}
+
+.banner-text p{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+}
+
+.banner{
+  height: 60vh;
+  margin-left: 38px;
+  width:1296px;
+  margin-top: 20px;
+}
+
+.banner img{
+  width: 300px;
+  height: 200px;
+  fill: cover;
 }
