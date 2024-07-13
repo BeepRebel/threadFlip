@@ -4,8 +4,8 @@
     bottom: 10px;
     left: 10px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    
+    
     background-color: rgb(226, 144, 230);
     width: 100%;
     padding: 10px;
@@ -13,8 +13,9 @@
   }
 
   .us p {
-    margin: 650px;
-    font-size: 45px;
+    margin-top: 25px;
+    margin-left: 650px;
+    font-size: 50px;
     color: azure;
     font-family: "";
   }
@@ -33,7 +34,8 @@
   }
   
   .contact-image {
-    margin-left: 100px;
+    height: 1000px;
+    margin-left: -135px;
   }
   
   .contact-form {

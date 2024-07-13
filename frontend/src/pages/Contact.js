@@ -39,7 +39,7 @@ const Contact = () => {
       <div className='us slide-in-bottom'>
         <p>Contact us</p>
       </div>
-      <p className='pp2'>
+      <p className='pp2 slide-in-bottom'>
         Thank you for visiting our website! We value your feedback and would love to hear from you. If you have any questions, comments, or suggestions, please don't hesitate to reach out to us. We are always happy to help and look forward to hearing from you soon.
       </p>
       <div className='container-xxl contact-content'>
