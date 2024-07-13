@@ -1,0 +1,60 @@
+.stepwise-guide {
+    padding: 50px 0;
+  }
+  
+  .step-card {
+    background-color: #fce4ec; /* Light pink background color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Grey shadow */
+    margin-bottom: 20px;
+  }
+  
+  .step-card h4 {
+    font-size: 1.5rem; /* Example font size for step numbers */
+    margin-bottom: 10px;
+  }
+  
+  .step-card p {
+    color: #333; /* Example text color */
+    font-size: 1rem;
+  }
+
+  .stepwise-guide {
+    padding: 50px 0;
+  }
+  
+  .step-card {
+    background-color: #fce4ec; /* Light pink background color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Grey shadow */
+    margin-bottom: 20px;
+  }
+  
+  .step-header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .step-header h4 {
+    margin-bottom: 0;
+  }
+  
+  .step-header i {
+    color: #ff80ab; /* Color for the pointer icon */
+    font-size: 1.2rem;
+    margin-right: 10px;
+  }
+  
+  .step-details {
+    margin-top: 10px;
+  }
+  
+  .step-icon {
+    float: left;
+    margin-right: 10px;
+    color: #333; /* Icon color */
+  }
+  
+  
