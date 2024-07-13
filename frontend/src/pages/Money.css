@@ -1,0 +1,75 @@
+.money-heading{
+    color:pink;
+    font-size:30px;
+    margin-top: 20px;
+}
+
+.money-wrapper {
+    background-color: #f8f9fa;
+    padding: 20px;
+  }
+  
+  .money-image {
+    max-width: 100%;
+  }
+  
+  .money-content {
+    text-align: left;
+  }
+  
+  .money-balance {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .money-buttons {
+    margin-top: 10px;
+  }
+  
+  .money-buttons .btn {
+    margin-right: 10px;
+  }
+  
+  .change-account-link {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .transaction-history {
+    margin-top: 75px;
+  }
+  
+  .transaction-history h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .transaction-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .transaction-item p {
+    margin: 5px 0;
+  }
+
+  .leftt{
+    width:117%;
+    margin-left: -110px;
+  }
+
+  .imgne{
+    height: 50px;
+  }
+
+  .money-content p{
+    font-size:20px;
+    margin-top: 75px;
+  }
+  

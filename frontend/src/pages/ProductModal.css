@@ -1,0 +1,85 @@
+/* src/components/ProductModal.css */
+
+.product-modal-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .carousel-section {
+    flex: 1;
+  }
+  
+  .details-section {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .product-info {
+    flex-grow: 1;
+  }
+  
+  .scrollable-info {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+  }
+
+  .rent-price {
+    color: #ff1493;
+  }
+  
+  .options-section {
+    margin-top: 20px;
+  }
+  
+  .options-boxes {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .option-box {
+    border: 2px solid #ff69b4;
+   
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .option-box:hover {
+    background-color: #ff69b4;
+    color: #fff;
+  }
+  
+  .details-text,
+  .specifications-text,
+  .terms-text {
+    margin-top: 10px;
+  }
+  
+  .rent-button {
+    align-self: flex-center;
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+    
+  }
+  
+  .rent-button .me-2 {
+    margin-right: 8px;
+    text-align: center;
+  }
+  
+  .rent-button:hover {
+    background-color: #ff1493;
+  }
+  

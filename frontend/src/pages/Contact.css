@@ -1,0 +1,83 @@
+.us {
+    margin-left: 0px;
+    margin-top: 50px;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    
+    
+    background-color: rgb(226, 144, 230);
+    width: 100%;
+    padding: 10px;
+    height: 150px;
+  }
+
+  .us p {
+    margin-top: 25px;
+    margin-left: 650px;
+    font-size: 50px;
+    color: azure;
+    font-family: "";
+  }
+
+  .pp2{
+    margin:50px;
+    margin-left: 400px;
+    text-align: center;
+    width: 50vw;
+    color:pink;
+    font-size: 18px;
+  }
+
+  .contact-content {
+    margin-top: 20px;
+  }
+  
+  .contact-image {
+    height: 1000px;
+    margin-left: -135px;
+  }
+  
+  .contact-form {
+    margin-top: 20px;
+    margin-left: -130px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .btn {
+    margin-top: 10px;
+  }
+  
+  .thanks-message {
+    margin-top: 30px;
+    color: rgb(81, 0, 128);
+    font-size:17px;
+    text-align: center;
+  }
+  
+  .social-iconss a{
+    font-size: 50px;
+    margin-right: 100px;
+  }
+  
+  .social-iconss a:hover{
+    color: rgb(81, 0, 128);
+  
+  }
+  
+  .icon {
+    color: pink;
+    font-size: 2rem;
+  }
+  
+  .icon:hover {
+    color: #007bff;
+  }
+  
+  .map {
+    margin-top: 75px;
+    text-align: center;
+  }
