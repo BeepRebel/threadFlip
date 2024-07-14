@@ -8,17 +8,17 @@ import './Sell.css'; // Ensure to add your CSS file for styling
 const Sell = () => {
   return (
     <div className="sell-page mt-20">
-      {/* Navbar Space */}
-      <div className="navbar-space"></div>
+      
+     
 
       {/* Large Block for Selling */}
-      <div className="sell-block mt-20">
+      <div className="sell-block ">
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
               <div className="sell-text">
-                <h2>Sell clothes online on ThreadFlip</h2>
-                <p>Start earning by selling your fashion items.</p>
+                <p>Sell clothes online on ThreadFlip!</p>
+                
               </div>
             </div>
             <div className="col-lg-6 d-flex align-items-center justify-content-end">

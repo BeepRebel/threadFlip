@@ -29,10 +29,6 @@ const CategoryPage = () => {
   return (
     <>
       
-      
-        <h1 className="category-heading">.............</h1>
-        <p className="category-description">..................</p>
-        
       <div className="category-page" >
         <h1 className="category-heading">Shop by Category</h1>
         <p className="category-description">Browse through our collection of dresses.</p>

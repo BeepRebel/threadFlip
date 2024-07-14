@@ -1,9 +1,13 @@
 .stepwise-guide {
     padding: 50px 0;
   }
+
+.container p{
+
+}
   
   .step-card {
-    background-color: #fce4ec; /* Light pink background color */
+    background-color: #ff80ab; /* Light pink background color */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Grey shadow */
@@ -18,18 +22,6 @@
   .step-card p {
     color: #333; /* Example text color */
     font-size: 1rem;
-  }
-
-  .stepwise-guide {
-    padding: 50px 0;
-  }
-  
-  .step-card {
-    background-color: #fce4ec; /* Light pink background color */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Grey shadow */
-    margin-bottom: 20px;
   }
   
   .step-header {
@@ -56,5 +48,4 @@
     margin-right: 10px;
     color: #333; /* Icon color */
   }
-  
   
