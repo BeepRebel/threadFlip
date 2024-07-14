@@ -213,7 +213,7 @@ const Cart = () => {
   };
 
   return (
-    <section className='cart-wrapper py-5'>
+    <section className='cart-wrapper'>
       <div className='cart slide-in-bottom'>
         <p>My Cart</p>
       </div>

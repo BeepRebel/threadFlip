@@ -12,6 +12,7 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Money from './pages/Money';
 import Vote from './pages/Vote';
+import SellForm from './pages/SellForm';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Wishlist from './pages/Wishlist.js';
 import Cart from './pages/Cart.js';
@@ -34,6 +35,7 @@ function App() {
           <Route path="Signup" element={<Signup />}/>
           <Route path="Money" element={<Money />}/>
           <Route path="Vote" element={<Vote />}/>
+          <Route path="SellForm" element={<SellForm />}/>
           <Route path="product" element={<Thrift />}/>
           <Route path="product/:id" element={<ThriftProduct />} />
           <Route path="Rent" element={<Rent />}/>

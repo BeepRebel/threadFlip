@@ -36,7 +36,7 @@ const Home = () => {
   }, []);
 
   return (
-    <section className='home-wrapper-1 py-5'>
+    <section className='home-wrapper-1'>
       <div className='container-xxl'>
         <div className='row'>
           <div className='col-12 mb-3'>
@@ -54,7 +54,7 @@ const Home = () => {
               </div>
               
               
-              <img src="/images/home/banner.png" className='banner slide-in-bottom' alt="main-banner" />
+              <img src="/images/home/banner.png" className='bannerji slide-in-bottom' alt="main-banner" />
               <h1>Our Bestsellers</h1>
               <div className='car col-12 mb-3'>
                 <Carousel controls={false} indicators={false} interval={2000} className='slide-in-bottom'>

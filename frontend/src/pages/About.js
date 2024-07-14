@@ -34,7 +34,7 @@ const About = () => {
     }, []);
   
     return (
-      <section className='home-wrapper-1 py-5'>
+      <section className='home-wrapper-1'>
         <div className='container-xxl'>
           <div className='row'>
             <div className='col-12 mb-3'>

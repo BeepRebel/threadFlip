@@ -89,7 +89,7 @@ const Thrift = () => {
   ];
 
   return (
-    <div className='store-wrapper home-wrapper-2 py-5 fade-in'>
+    <div className='store-wrapper home-wrapper-2 fade-in'>
       <div className='container-xxl'>
         <div className='row'>
           {/* Carousel */}
@@ -107,27 +107,27 @@ const Thrift = () => {
           </div>
 
           
-          <div className='row mt-3 banner'>
-            <div className='col-md-4 mb-3 position-relative' style={{ backgroundColor: '#fa9dcc', padding: '15px' }}>
+          <div className='row mt-3 banner gin'>
+            <div className='col-md-4 mb-3 position-relative ' style={{ backgroundColor: '#fa9dcc', padding: '15px' }}>
               <div className='banner-text text-right mb-2'>
                 <h3>Own it</h3>
                 <p>integrating personal style, trends, cultural influences, fostering confidence and self-expression.</p>
               </div>
-              <img src='/images/thrift/b3.jpg' alt='Banner 1' className='img-fluid align-bottom align-right' style={{ maxWidth: '100%', height: 'auto', position: 'absolute', bottom: '0', right: '0' }} />
+              <img src='/images/thrift/b3.jpg' alt='Banner 1' className='img-fluid align-bottom align-right ' style={{ width: '50%', height: 'auto', position: 'absolute', bottom: '0', right: '0' }} />
             </div>
             <div className='col-md-4 mb-3 position-relative' style={{ backgroundColor: '#fa5aaa', padding: '15px' }}>
               <div className='text-right mb-2 banner-text'>
                 <h3>Embrace it</h3>
                 <p>showcasing clothing with creativity, intentionality, expressing personal taste, identity, and social statements.</p>
               </div>
-              <img src='/images/thrift/b1.jpg' alt='Banner 2' className='img-fluid align-bottom align-right' style={{ maxWidth: '100%', height: 'auto', position: 'absolute', bottom: '0', right: '0' }} />
+              <img src='/images/thrift/b1.jpg' alt='Banner 2' className='img-fluid align-bottom align-right' style={{ width: '50%', height: 'auto', position: 'absolute', bottom: '0', right: '0' }} />
             </div>
             <div className='col-md-4 mb-3 position-relative' style={{ backgroundColor: '#fc0581', padding: '15px' }}>
               <div className='text-right mb-2 banner-text'>
                 <h3>Liberate it</h3>
                 <p>Liberate your clothes by giving them a new life through thrifting.</p>
               </div>
-              <img src='/images/thrift/b2.jpg' alt='Banner 3' className='img-fluid align-bottom align-right' style={{ maxWidth: '100%', height: 'auto', position: 'absolute', bottom: '0', right: '0' }} />
+              <img src='/images/thrift/b2.jpg' alt='Banner 3' className='img-fluid align-bottom align-right' style={{ width: '50%', height: 'auto', position: 'absolute', bottom: '0', right: '0' }} />
             </div>
           </div>
 

@@ -3,8 +3,8 @@ import './Vote.css';
 
 const Vote = () => {
   return (
-    <div className="vote-wrapper py-5">
-      <div className="container-xxl ginmar">
+    <div className="vote-wrapper">
+      <div className="container-xxl ">
         <div className="row">
           {/* First Row - Image and Product Details */}
           <div className="col-lg-6">

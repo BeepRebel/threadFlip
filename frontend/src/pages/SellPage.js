@@ -22,7 +22,7 @@ const Sell = () => {
               </div>
             </div>
             <div className="col-lg-6 d-flex align-items-center justify-content-end">
-              <button className="btnn btnn-primary">Start Selling</button>
+              <Link to="/SellForm" className='btnnn btnnn-primary'>Start Selling</Link>
             </div>
           </div>
         </div>

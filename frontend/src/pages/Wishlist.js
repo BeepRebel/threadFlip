@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom';
 const Wishlist = () => {
   return (
     
-    <div className="wishlist-wrapper py-5">
+    <div className="wishlist-wrapper">
       <h1 className="wishlist-heading slide-in-bottom">My Wishlist</h1>
       <div className="wishlist-container container-xxl">
         
-        <div className="wishlist-banner row slide-in-bottom">
+        <div className="wishlist-banner row ">
           <div className="col-3 product-image">
             <img src="/images/cart/dress.png" alt="Product" />
           </div>
@@ -34,7 +34,7 @@ const Wishlist = () => {
             <button className="btnn btneww">View Details</button>
           </div>
         </div>
-        <div className="wishlist-banner row">
+        <div className="wishlist-banner row ">
           <div className="col-3 product-image">
             <img src="/images/cart/bag.png" alt="Product" />
           </div>

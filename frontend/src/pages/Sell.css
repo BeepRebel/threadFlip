@@ -68,7 +68,7 @@
     height: 50px; /* Adjust as needed for spacing */
   }
   
-  .btnn.btnn-primary {
+  .btnnn.btnnn-primary {
     background-color: white;
     color:rgb(178, 144, 230);
     font-size: 40px;
@@ -77,9 +77,10 @@
     border-radius: 5px; /* Optional: To round the corners */
     cursor: pointer; /* Optional: To change the cursor on hover */
     transition: background-color 0.3s, color 0.3s; /* Optional: To add a transition effect */
+    text-decoration: none;
 }
 
-.btnn.btnn-primary:hover {
+.btnnn.btnnn-primary:hover {
     background-color:#fce4ec;/* Optional: Change background color on hover */
     color: rgb(178, 144, 230); /* Optional: Change text color on hover */
 }

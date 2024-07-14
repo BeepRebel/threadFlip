@@ -35,7 +35,7 @@ const Contact = () => {
   }, []);
 
   return (
-    <section className='cart-wrapper py-5'>
+    <section className=''>
       <div className='us slide-in-bottom'>
         <p>Contact us</p>
       </div>

@@ -34,7 +34,7 @@ const Money = () => {
       }, []);
       
   return (
-    <div className="money-wrapper py-5">
+    <div className="money-wrapper">
       <div className="container ">
       <img src="/images/moneyban.png" className='leftt fade-in'/>
         <div className="row">
