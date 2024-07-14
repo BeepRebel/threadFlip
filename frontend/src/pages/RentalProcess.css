@@ -1,50 +1,47 @@
-/* src/RentalProcess.css */
 .rental-process-container {
-    padding: 20px;
-    background-color: pink; /* light gray background color */
-    border-radius: 15px;
-    margin: 20px 0;
-  }
-  
-  .rental-process-title {
-    text-align: center;
-   
-    color: white;
-    margin-bottom: 20px;
-  }
-  
-  .rental-steps {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .step {
-    flex: 1 1 22%;
-    margin: 10px;
-    padding: 10px; /* Smaller padding */
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-    text-align: center;
-  }
-  
-  .step-icon {
-    font-size: 1.5rem; /* Smaller icon size */
-    color: pink;
-    margin-bottom: 5px; /* Smaller margin */
-  }
-  
-  .step h6 {
-    margin-bottom: 5px; /* Smaller margin */
-    font-size: 1rem; /* Smaller font size */
-    color: #333;
-  }
-  
-  .step p {
-    font-size: 0.8rem; /* Smaller font size */
-    color: #666;
-  }
-  
- 
+  padding: 20px;
+  background-color: pink; /* light gray background color */
+  border-radius: 15px;
+  margin: 20px 0;
+}
+
+.rental-process-title {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.rental-steps {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rental-step {
+  flex: 1 1 22%;
+  margin: 10px;
+  padding: 10px; /* Smaller padding */
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.rental-step-icon {
+  font-size: 1.5rem; /* Smaller icon size */
+  color: pink;
+  margin-bottom: 5px; /* Smaller margin */
+}
+
+.rental-step h6 {
+  margin-bottom: 5px; /* Smaller margin */
+  font-size: 1rem; /* Smaller font size */
+  color: #333;
+}
+
+.rental-step p {
+  font-size: 0.8rem; /* Smaller font size */
+  color: #666;
+}
