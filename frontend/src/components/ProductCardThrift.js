@@ -18,12 +18,11 @@ const ProductCardThrift = ({id , brand, title, price, image, rating, condition }
         return { text: 'Unknown', color: 'grey' };
     }
   };
-
   const { text, color } = getConditionDetails(condition);
   return (
     <div className="col-md-3 mb-4">
       <div className="card product-card-thrift">
-      <Link to="{`${id}`}">
+      <Link to={`/product/${id}`}>
           <div className="card-img-wrapper">
             <img src={image} alt={title} className="card-img-top" />
             <div className="heart-icon">

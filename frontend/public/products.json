@@ -16,14 +16,17 @@
     "reviews": [
       {
         "customer": "John Doe",
-        "review": "Great scooter! Very convenient and environmentally friendly."
+        "rating": 5,
+        "description": "Great scooter! Very convenient and environmentally friendly."
       },
       {
         "customer": "Jane Smith",
-        "review": "Love the design and the range. Perfect for my daily commute."
+        "rating": 4,
+        "description": "Love the design and the range. Perfect for my daily commute."
       }
     ],
-    "condition": 1
+    "condition": 1,
+    "conditionDescription": "Practically new, shows no obvious signs of being worn or washed"
   },
   {
     "id": 2,
@@ -42,15 +45,18 @@
     "description": "Our electric scooter is designed for urban commuting, offering a smooth ride with zero emissions.",
     "reviews": [
       {
-        "customer": "John Doe",
-        "review": "Great scooter! Very convenient and environmentally friendly."
+        "customer": "Emily Davis",
+        "rating": 5,
+        "description": "Very comfortable and perfect for running."
       },
       {
-        "customer": "Jane Smith",
-        "review": "Love the design and the range. Perfect for my daily commute."
+        "customer": "Michael Brown",
+        "rating": 4,
+        "description": "Great shoes, high quality and durable."
       }
     ],
-    "condition": 2
+    "condition": 3,
+    "conditionDescription": "Gently used, with minor signs of wear"
   },
   {
     "id": 3,
@@ -68,14 +74,17 @@
     "reviews": [
       {
         "customer": "Alex Johnson",
-        "review": "Best soccer ball I've ever used!"
+        "rating": 5,
+        "description": "Best soccer ball I've ever used!"
       },
       {
         "customer": "Chris Lee",
-        "review": "Great quality and durability."
+        "rating": 4,
+        "description": "Great quality and durability."
       }
     ],
-    "condition": 1
+    "condition": 1,
+    "conditionDescription": "Very good condition, shows slight signs of wear"
   },
   {
     "id": 4,
@@ -94,14 +103,17 @@
     "reviews": [
       {
         "customer": "Sara Connor",
-        "review": "Amazing phone with great features."
+        "rating": 5,
+        "description": "Amazing phone with great features."
       },
       {
         "customer": "James Bond",
-        "review": "Smooth performance and excellent camera quality."
+        "rating": 4,
+        "description": "Smooth performance and excellent camera quality."
       }
     ],
-    "condition": 2
+    "condition": 2,
+    "conditionDescription": "Gently used, with minor signs of wear"
   },
   {
     "id": 5,
@@ -119,14 +131,17 @@
     "reviews": [
       {
         "customer": "Peter Parker",
-        "review": "Very useful and stylish smartwatch."
+        "rating": 4,
+        "description": "Very useful and stylish smartwatch."
       },
       {
         "customer": "Bruce Wayne",
-        "review": "Great for tracking workouts and health metrics."
+        "rating": 5,
+        "description": "Great for tracking workouts and health metrics."
       }
     ],
-    "condition": 3
+    "condition": 3,
+    "conditionDescription": "Used condition, shows noticeable signs of wear"
   },
   {
     "id": 6,
@@ -145,14 +160,17 @@
     "reviews": [
       {
         "customer": "Clark Kent",
-        "review": "Best headphones I've ever had!"
+        "rating": 5,
+        "description": "Best headphones I've ever had!"
       },
       {
         "customer": "Diana Prince",
-        "review": "Excellent noise-cancelling and sound quality."
+        "rating": 5,
+        "description": "Excellent noise-cancelling and sound quality."
       }
     ],
-    "condition": 2
+    "condition": 2,
+    "conditionDescription": "Gently used, with minor signs of wear"
   },
   {
     "id": 7,
@@ -170,14 +188,17 @@
     "reviews": [
       {
         "customer": "Tony Stark",
-        "review": "Powerful laptop with excellent build quality."
+        "rating": 5,
+        "description": "Powerful laptop with excellent build quality."
       },
       {
         "customer": "Natasha Romanoff",
-        "review": "Handles all my tasks with ease."
+        "rating": 4,
+        "description": "Handles all my tasks with ease."
       }
     ],
-    "condition": 1
+    "condition": 1,
+    "conditionDescription": "Very good condition, shows slight signs of wear"
   },
   {
     "id": 8,
@@ -195,14 +216,17 @@
     "reviews": [
       {
         "customer": "Steve Rogers",
-        "review": "Great fit and quality."
+        "rating": 4,
+        "description": "Great fit and quality."
       },
       {
         "customer": "Bucky Barnes",
-        "review": "Love the classic look."
+        "rating": 3,
+        "description": "Love the classic look."
       }
     ],
-    "condition": 3
+    "condition": 3,
+    "conditionDescription": "Used condition, shows noticeable signs of wear"
   },
   {
     "id": 9,
@@ -221,38 +245,46 @@
     "reviews": [
       {
         "customer": "Wade Wilson",
-        "review": "Super cool and comfortable."
+        "rating": 5,
+        "description": "Super cool and comfortable."
       },
       {
         "customer": "Vanessa Carlysle",
-        "review": "Perfect for sunny days."
+        "rating": 4,
+        "description": "Perfect for sunny days."
       }
     ],
-    "condition": "2"
+    "condition": 2,
+    "conditionDescription": "Gently used, with minor signs of wear"
   },
   {
     "id": 10,
     "brand": "Gucci",
     "title": "Leather Wallet",
-    "price": 10000,
+    "price": 12000,
     "images": [
-      "/images/thriftProducts/10-1.jpg",
-      "/images/thriftProducts/10-2.jpg"
+      "/images/thriftProducts/9-1.jpg",
+      "/images/thriftProducts/9-2.jpg",
+      "/images/thriftProducts/9-3.jpg"
     ],
     "rating": 5,
-    "details": "Luxury leather wallet with multiple card slots and compartments.",
-    "name": "Leather Wallet",
-    "description": "Our Gucci leather wallet is the epitome of elegance and functionality.",
+    "details": "Classic sunglasses with UV protection and stylish design.",
+    "name": "Sunglasses",
+    "description": "Protect your eyes and look great with our Ray-Ban sunglasses.",
     "reviews": [
       {
-        "customer": "Bruce Banner",
-        "review": "High-quality wallet with plenty of space."
+        "customer": "Wade Wilson",
+        "rating": 5,
+        "description": "Super cool and comfortable."
       },
       {
-        "customer": "Tony Stark",
-        "review": "Love the luxurious feel and design."
+        "customer": "Vanessa Carlysle",
+        "rating": 4,
+        "description": "Perfect for sunny days."
       }
     ],
-    "condition": 1
-  }
-]
+    "condition": 2,
+    "conditionDescription": "Gently used, with minor signs of wear"
+  }]
+   
+

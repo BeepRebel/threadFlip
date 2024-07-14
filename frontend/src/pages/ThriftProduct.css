@@ -1,5 +1,3 @@
-/* ThriftProduct.css */
-
 .main-product-wrapper {
   background-color: #f8f9fa; 
   padding: 20px 0;
@@ -13,9 +11,16 @@
   margin-right: 10px;
 }
 
-.btn-primary {
+.bttn {
   background-color: pink; 
-  color: #fff; 
+  color: white; 
+}
+
+.bttn:hover{
+  background-color: #f031c0;
+}
+.bttn:active{
+  background-color: #f031c0;
 }
 
 .description-wrapper h4 {
@@ -45,5 +50,106 @@
 }
 
 .thumbnail-images img:hover {
-  border: 2px solid #007bff;
+  border: 2px solid #f031c0;
 }
+
+.product-details{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.product-details h2{
+  font-weight: 800;
+  font-size: 40px;
+}
+.product-details{
+  color: rgb(42, 42, 42);
+}
+.product-details {
+  font-size: 1.2em; /* Increase font size for product details text */
+}
+
+.toggle-details {
+  cursor: pointer;
+  font-size: 1.2em; /* Increase font size for toggle text */
+}
+
+.toggle-icon {
+  font-size: 1.5em; /* Increase size of the toggle icon */
+  margin-right: 5px;
+  color: #f031c0;
+}
+
+.item-details {
+  font-size: 1.1em; /* Increase font size for item details text */
+  margin-top: 10px;
+}
+.condition-box {
+  border-radius: 10px; /* Rounded corners */
+  padding: 5px 10px; /* Padding inside the box */
+  margin-left: 10px; /* Space between the text and the box */
+  font-size: 1em; /* Font size for the text inside the box */
+  color: white;
+  display: inline-block;
+}
+.details{
+  background-color: white;
+  padding: 30px;
+}
+
+.review-wrapper{
+  background-color: #f8f9fa;
+}
+.review-inner-wrapper{
+  background-color: white;
+  padding: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+}
+.review-head h4{
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    font-size: 18px;
+}
+
+.review-head p{
+  font-size: 14px;
+  color: #777777;
+}
+.review p{
+  font-size: 14px;
+  color: #777777;
+}
+
+.review{
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.star-icon {
+  color: gold;
+  font-size: 20px;
+}
+
+.rating-text {
+  margin-left: 5px;
+}
+
+.review .d-flex {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.review-wrapper h4{
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.review-wrapper .rating-text,
+.review-wrapper p {
+  font-size: 1.5rem;
+}
+
+.review h6{
+  font-size: 25px;
+}
+
+

@@ -139,7 +139,7 @@ const Thrift = () => {
                 <div className='row'>
                   {products.map((product) => (
                     <ProductCardThrift
-                      key={product.id}
+                      id={product.id}
                       brand={product.brand}
                       title={product.title}
                       price={product.price}
