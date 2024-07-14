@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import StepwiseGuide from './StepwiseGuide';
+import StepwiseGuide from '../components/StepwiseGuide';
 import SellFormModal from './SellFormModal';
 
 import './Sell.css'; // Ensure to add your CSS file for styling
