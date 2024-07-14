@@ -8,7 +8,7 @@ const StepwiseGuide = () => {
         <p>Stepwise Guide to Selling Clothes Online</p>
         <div className="row">
           <div className="col-md-12">
-            <div className="step-card">
+            <div className="stepp-card">
               <h3>Step 1: Register as an Amazon Seller</h3>
               <p>To create your seller account on Amazon.in you will need to submit the following details:</p>
               <ul>
@@ -20,7 +20,7 @@ const StepwiseGuide = () => {
         </div>
         <div className="row">
           <div className="col-md-12">
-            <div className="step-card">
+            <div className="stepp-card">
               <h3>Step 2: Listing Your Products</h3>
               <p>Please note that clothing items are referred to as 'Apparel' on Amazon.in.</p>
               <p>Next, you will need to display your products on Amazon.in for customers to purchase.</p>
@@ -39,7 +39,7 @@ const StepwiseGuide = () => {
         </div>
         <div className="row">
           <div className="col-md-12">
-            <div className="step-card">
+            <div className="stepp-card">
               <h3>Step 3: Deliver to Customer</h3>
               <p>Once your product receives an order, you will need to deliver it to the customer.</p>
               <p>There are many ways to do this:</p>
@@ -53,7 +53,7 @@ const StepwiseGuide = () => {
         </div>
         <div className="row">
           <div className="col-md-12">
-            <div className="step-card">
+            <div className="stepp-card">
               <h3>Step 4: Get Paid Every 7 Days</h3>
               <p>You will get paid for your delivered orders in 7-day payment cycles after deducting the Amazon fees.</p>
               <p>Funds are deposited directly into your bank account.</p>

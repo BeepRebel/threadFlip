@@ -22,7 +22,7 @@ const Sell = () => {
               </div>
             </div>
             <div className="col-lg-6 d-flex align-items-center justify-content-end">
-              <button className="btn btn-primary">Start Selling</button>
+              <button className="btnn btnn-primary">Start Selling</button>
             </div>
           </div>
         </div>

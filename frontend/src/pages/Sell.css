@@ -20,7 +20,7 @@
   color: azure;
   }
   
-  .step-card {
+  .stepp-card {
     background-color:#fce4ec; /* Light pink background color */
     padding: 20px;
     border-radius: 8px;
@@ -28,36 +28,36 @@
     margin-bottom: 20px;
   }
   
-  .step-card h4 {
+  .stepp-card h4 {
     font-size: 1.5rem; /* Example font size for step numbers */
     margin-bottom: 10px;
   }
   
-  .step-card p {
+  .stepp-card p {
     color: #333; /* Example text color */
     font-size: 1rem;
   }
   
-  .step-header {
+  .stepp-header {
     display: flex;
     align-items: center;
   }
   
-  .step-header h4 {
+  .stepp-header h4 {
     margin-bottom: 0;
   }
   
-  .step-header i {
+  .stepp-header i {
     color:hotpink; /* Color for the pointer icon */
     font-size: 1.2rem;
     margin-right: 10px;
   }
   
-  .step-details {
+  .stepp-details {
     margin-top: 10px;
   }
   
-  .step-icon {
+  .stepp-icon {
     float: left;
     margin-right: 10px;
     color: #333; /* Icon color */
@@ -68,7 +68,7 @@
     height: 50px; /* Adjust as needed for spacing */
   }
   
-  .btn.btn-primary {
+  .btnn.btnn-primary {
     background-color: white;
     color:rgb(178, 144, 230);
     font-size: 40px;
@@ -79,7 +79,7 @@
     transition: background-color 0.3s, color 0.3s; /* Optional: To add a transition effect */
 }
 
-.btn.btn-primary:hover {
+.btnn.btnn-primary:hover {
     background-color:#fce4ec;/* Optional: Change background color on hover */
     color: rgb(178, 144, 230); /* Optional: Change text color on hover */
 }
