@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import CarouselComponent from './CarouselComponent';
-import ImageRow from './ImageRow';
+import CarouselComponent from '../components/CarouselComponent';
+import ImageRow from '../components/ImageRow';
 import './Thrift.css';
-import './ImageRow.css';
+import '../components/ImageRow';
 import ProductCardThrift from '../components/ProductCardThrift';
 
 const Thrift = () => {

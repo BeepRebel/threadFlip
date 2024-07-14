@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
-import CarouselComponent from './CarouselComponent';
-import ImageRow from './ImageRow';
+import CarouselComponent from '../components/CarouselComponent';
+import ImageRow from '../components/ImageRow';
 import './Rent.css';
-import './ImageRow.css';
-import RentalProcess from './RentalProcess';
+import '../components/ImageRow.css';
+import RentalProcess from '../components/RentalProcess';
 
 const Rent = () => {
   useEffect(() => {
