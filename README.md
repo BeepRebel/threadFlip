@@ -1,6 +1,5 @@
 # ThreadFlip - Thrift and Rent Platform
-
-#(Running)
+(Running)
 ## Description
 A unified platform for buying, selling, and renting thrift clothes with integrated MyntraMoney and wishlist feedback system.
 
